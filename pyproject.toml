@@ -1,9 +1,16 @@
 [tool.poetry]
 name = "lmi-calculator"
 version = "0.0.1"
-description = "Calculate your language models"
-authors = ["Jacob Valdez <jacobfv123@gmail.com>"]
+description = "Calculator app for LLMs"
+authors = [
+    "ComputaCo <hello@computaco.ai>",
+    "Jacob Valdez <jacob.valdez@computaco.ai>",
+]
 readme = "README.md"
+license = "MIT"
+homepage = "https://computaco.ai"
+repository = "https://github.com/ComputaCo/lmi-calculator"
+keywords = ["lmi", "llm", "terminal", "cli"]
 packages = [{ include = "lmi_calculator" }]
 
 [tool.poetry.dependencies]
