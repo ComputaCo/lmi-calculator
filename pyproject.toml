@@ -1,15 +1,21 @@
 [tool.poetry]
 name = "lmi-calculator"
-version = "0.1.0"
-description = ""
+version = "0.0.1"
+description = "Calculate your language models"
 authors = ["Jacob Valdez <jacobfv123@gmail.com>"]
 readme = "README.md"
-packages = [{include = "lmi_calculator"}]
+packages = [{ include = "lmi_calculator" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-hooks = "^0.2.1"
+typer = "^0.9.0"
+lmi = "^0.0.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lmi-calculator = 'lmi_calculator.__main__:app'
